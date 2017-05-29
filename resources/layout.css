@@ -1,6 +1,6 @@
 /*
  * Add your CSS styles here
- * 
+ *
  */
 
 body {
@@ -36,14 +36,22 @@ a:hover {
 }
 
 #nav {
+	float: left;
 	margin: 0 20px 0 0;
   /* CHALLENGE 3: how could you get this to float to the left side of the screen? */
 }
 
 #main {
+	float: right;
 	margin: 0;
+	padding-left: 5px;
+	border-left: 1px solid green;
   /*  CHALLENGE 3: how could you get this to float to the left side of the screen? */
   /* CHALLENGE 2: how could you give this element a one-pixel border down its left side? */
+}
+
+.projects {
+	border-left: 5px solid green;
 }
 
 #copyright {
