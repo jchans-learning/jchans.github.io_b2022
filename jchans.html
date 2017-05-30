@@ -33,14 +33,6 @@
 
     <p class="special"> My name is
       <span id="user-name"> Jiang, Cheng Han </span>
-      <script>
-        function replaceName() {
-          var myNewName = window.prompt('Pick a new name!');
-          document.getElementById('user-name').innerHTML = myNewName;
-        }
-
-        document.onclick = replaceName;
-      </script>
     </p>
 
     <ul>
@@ -48,9 +40,20 @@
       <li> <a href="https://github.com/jchans?tab=repositories">github repo.</a></li>
     </ul>
 
-    <p>時而不時會想要這樣從頭做一個頁面，一直在新手村的感覺。話說當年在學校，某個教授的自己的網頁似乎也是這種。20170529</p>
+    <p>可能要研究一下怎麼做出手機板的頁面。</p>
 
     <h1> 備忘存檔 </h1>
+
+    <p>時而不時會想要這樣從頭做一個頁面，一直在新手村的感覺。話說當年在學校，某個教授的自己的網頁似乎也是這種。20170529</p>
+
+    <script>
+      function replaceName() {
+        var myNewName = window.prompt('Pick a new name!');
+        document.getElementById('user-name').innerHTML = myNewName;
+      }
+
+      document.onclick = replaceName;
+    </script>
 
   </body>
 </html>
