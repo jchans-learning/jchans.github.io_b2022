@@ -33,6 +33,14 @@
 
     <p class="special"> My name is
       <span id="user-name"> Jiang, Cheng Han </span>
+      <script>
+        function replaceName() {
+          var myNewName = window.prompt('Pick a new name!');
+          document.getElementById('user-name').innerHTML = myNewName;
+        }
+
+        document.onclick = replaceName;
+      </script>
     </p>
 
     <ul>
