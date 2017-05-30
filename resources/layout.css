@@ -44,7 +44,7 @@ a:hover {
 #main {
 	float: right;
 	margin: 0;
-	padding-left: 3px;
+	padding-left: 1px;
 	border-left: 1px solid green;
   /*  CHALLENGE 3: how could you get this to float to the left side of the screen? */
   /* CHALLENGE 2: how could you give this element a one-pixel border down its left side? */
