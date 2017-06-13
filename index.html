@@ -1,54 +1,49 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>About Me</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="resources/layout.css" type="text/css">
-    <!-- <script src="resources/javascript.js" charset="utf-8"></script> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>jchans' Page</title>
+
+    <!-- NOTE: css style -->
+    <style type="text/css" media="screen">
+    h1 {
+      font-size: 20px;
+      border-bottom: 1px solid #cccccc;
+    }
+
+    p {
+      padding: 10px;
+      background-color: papayaWhip;
+    }
+
+    .special {
+      border: 1px solid green;
+    }
+
+    #user-name {
+      font-weight: bold;
+    }
+    </style>
+
+
   </head>
   <body>
+    <h1> jchans' memo </h1>
 
-    <div id="header" class="content">
-      <h1>About Me</h1>
-      <p>
-        My name is <b>Jiang, Cheng-Han （江承翰）</b> and I'm a new to the web.
-      </p>
-    </div>
+    <p> My name is
+      <span id="user-name"> Jiang, Cheng Han （江承翰）</span>
+    </p>
 
-    <div class="content clearfix">
-      <!-- Page Navigation -->
-      <div id="nav">
+    <ul>
+      <li> <a href="http://hanscholem.tw/"> blog </a> </li>
+      <li> <a href="https://github.com/jchans?tab=repositories">github repo.</a></li>
+    </ul>
 
-        <img src="https://c1.staticflickr.com/9/8266/29893763371_2c6b664b5c_q.jpg" alt="">
+    <h1> 備忘存檔 </h1>
 
-        <h2>Contents</h2>
+    <p>時而不時會想要這樣從頭做一個頁面，一直在新手村的感覺。話說當年在學校，某個教授的自己的網頁似乎也是這種。20170529</p>
+    <p>Ｑ：可能要研究一下怎麼做出手機板的頁面。<br>Ａ：用 <a href="https://developer.mozilla.org/en-US/docs/Mozilla/Mobile/Viewport_meta_tag">viewport meta tag 做。</a></p>
 
-        <ul>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#hobbies">Hobbies</a></li>
-          <li><a href="#fun-facts">Fun Facts</a></li>
-        </ul>
-      </div>
-
-      <!-- Main content area -->
-      <div id="main">
-        <h2 class="projects">Projects</h2>
-        <p>I would like to try build a web for simple human resource management</p>
-
-        <h3>Project #1 Simple HR Web</h3>
-        <p>Basic duty record, overtime and sick leave and so on.</p>
-
-        <h2 id="hobbies">Hobbies</h2>
-
-        <h3>Item #1 Magic: the Gathering</h3>
-        <p>I play MTG for almost 20 years. It's a well designed card game. I play EDH and draft mostly, Standard and Modern sometimes.</p>
-
-      </div>
-    </div>
-
-    <div id="copyright" class="content">
-      &copy; 2017
-       jchans, All Rights Reserved.
-    </div>
   </body>
 </html>
