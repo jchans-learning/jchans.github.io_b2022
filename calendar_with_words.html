@@ -93,8 +93,7 @@
         wrapText(context, text, x, y, maxWidth, lineHeight);
       }
 
-      var dataURL = canvas.toDataURL();
-      document.getElementById('canvasImg').src = dataURL;
+      canvasImg.src = canvas.toDataURL();
 
       createCalendar();
 
