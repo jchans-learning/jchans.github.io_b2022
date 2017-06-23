@@ -21,8 +21,10 @@
     請輸入作者稱呼：<br>
     <input type="text" id="authorName" value="Hans"><br>
     <button onclick="createCalendar()">產生日曆</button><br><br>
-    <img id="canvasImg" alt="Right click to save me!">
     <canvas id="myCanvas" width="400" height="400"></canvas>
+    <div class="calendarImage">
+      <img id="canvasImg" alt="Right click to save me!" onclick="fbs_click(this)">
+    </div>
 
     <script>
       function wrapText(context, text, x, y, maxWidth, lineHeight) {
@@ -97,6 +99,13 @@
       }
 
       createCalendar();
+
+      function fbs_click(TheImg) {
+        u=TheImg.src;
+        // t=document.title;
+        t=TheImg.getAttribute('alt');
+        window.open('http://www.facebook.com/sharer.php?u='+encodeURIComponent(u)+'&t='+encodeURIComponent(t),'sharer','toolbar=0,status=0,width=626,height=436');return false;
+      }
 
     </script>
   </body>
