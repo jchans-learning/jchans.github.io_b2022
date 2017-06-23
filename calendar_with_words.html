@@ -4,9 +4,21 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title></title>
+    <style type="text/css" media="screen">
+      .userInput {
+        margin: 1px;
+        padding: 1px;
+        width: 400px;
+        height: 150px;
+        resize: none;
+      }
+    </style>
   </head>
   <body>
-    <input type="text" id="todayMemo" value="請輸入日曆內容。"><br>
+    請輸入日曆內容：<br>
+    <textarea class="userInput" id="todayMemo">今天...</textarea><br>
+    請輸入作者稱呼：<br>
+    <input type="text" id="authorName" value="Hans"><br>
     <button onclick="createCalendar()">產生日曆</button><br><br>
     <canvas id="myCanvas" width="400" height="400"></canvas>
     <img id="canvasImg" alt="Right click to save me!">
@@ -68,20 +80,25 @@
         context.fillStyle="#a1b5cf";
         context.fillRect(0, 0, 400, 400);
 
+
+
+        var text = document.getElementById("todayMemo").value;
+        var author_name = document.getElementById("authorName").value;
+
         context.font = '16pt PingFang TC';
         context.fillStyle = '#f9f9f9';
 
-        context.fillText("jcwhans", 180, 335);
+        context.fillText(author_name, 180, 335);
         context.fillText(today, 180, 365);
 
         context.font = '20pt PingFang TC';
-        var text = document.getElementById("todayMemo").value;
-
         wrapText(context, text, x, y, maxWidth, lineHeight);
       }
 
       var dataURL = canvas.toDataURL();
       document.getElementById('canvasImg').src = dataURL;
+
+      createCalendar();
 
     </script>
   </body>
