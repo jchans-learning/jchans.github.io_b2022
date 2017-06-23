@@ -6,15 +6,17 @@
     <title></title>
   </head>
   <body>
+    <input type="text" id="todayMemo" value="請輸入日曆內容。"><br>
+    <button onclick="createCalendar()">產生日曆</button><br><br>
     <canvas id="myCanvas" width="400" height="400"></canvas>
+    <img id="canvasImg" alt="Right click to save me!">
 
+    <p id="memo_image_today"></p>
 
     <script>
-
       function wrapText(context, text, x, y, maxWidth, lineHeight) {
         var words = text.match(/.{1,1}/g);
         var line = '';
-
         for(var n = 0; n < words.length; n++) {
           var testLine = line + words[n];
           var metrics = context.measureText(testLine);
@@ -37,19 +39,49 @@
       var lineHeight = 35;
       var x = (canvas.width - maxWidth) / 2;
       var y = 50;
-      var text = '中文測試就是要兩個字兩個字分開。我不知道這是什麼意思但是就是個換行的動作。所以這樣就解決自動換行的問題，但是怎麼樣解決不需要的空格呢？我是什麼人？我想要什麼？我到底在幹什麼？';
 
-      context.fillStyle="#a1b5cf";
-      context.fillRect(0, 0, 400, 400);
+      var today = new Date();
+      var dd = today.getDate();
+      var mm = today.getMonth()+1; //January is 0!
+      var yyyy = today.getFullYear();
+      var weekday_number = today.getDay();
+      var weekday=new Array(7);
+      weekday[0]="星期日";
+      weekday[1]="星期一";
+      weekday[2]="星期二";
+      weekday[3]="星期三";
+      weekday[4]="星期四";
+      weekday[5]="星期五";
+      weekday[6]="星期六";
 
-      context.font = '16pt PingFang TC';
-      context.fillStyle = '#f9f9f9';
+      if(dd<10) {
+          dd = '0'+dd
+      }
 
-      context.fillText("jcwhans", 180, 335);
-      context.fillText("2017.06.23. 星期五", 180, 365);
+      if(mm<10) {
+          mm = '0'+mm
+      }
 
-      context.font = '20pt PingFang TC';
-      wrapText(context, text, x, y, maxWidth, lineHeight);
+      var today = yyyy + '.' + mm + '.' + dd + '.' + ' ' + weekday[weekday_number];
+
+      function createCalendar() {
+        context.fillStyle="#a1b5cf";
+        context.fillRect(0, 0, 400, 400);
+
+        context.font = '16pt PingFang TC';
+        context.fillStyle = '#f9f9f9';
+
+        context.fillText("jcwhans", 180, 335);
+        context.fillText(today, 180, 365);
+
+        context.font = '20pt PingFang TC';
+        var text = document.getElementById("todayMemo").value;
+
+        wrapText(context, text, x, y, maxWidth, lineHeight);
+      }
+
+      var dataURL = canvas.toDataURL();
+      document.getElementById('canvasImg').src = dataURL;
 
     </script>
   </body>
