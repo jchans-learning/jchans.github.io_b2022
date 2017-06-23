@@ -6,54 +6,51 @@
     <title></title>
   </head>
   <body>
-    <canvas id="myCanvas" width="400" height="400" style="border:1px solid #000000"></canvas>
+    <canvas id="myCanvas" width="400" height="400"></canvas>
+
 
     <script>
 
-      function wrapText(context, text, x, y, maxWidth, lineHeight)
-        {
-          var words = text.split("。");
-          var line = "";
+      function wrapText(context, text, x, y, maxWidth, lineHeight) {
+        var words = text.match(/.{1,1}/g);
+        var line = '';
 
-          for (var n = 0; n < words.length; n++)
-          {
-            var testLine = line + words[n] + " ";
-            var metrics = context.measureText(testLine);
-            var testWidth = metrics.width;
-            if (testWidth > maxWidth)
-            {
-              context.fillText(line, x, y);
-              line = words[n] + " ";
-              y += lineHeight;
-            }
-            else {
-              line = testLine;
-            }
+        for(var n = 0; n < words.length; n++) {
+          var testLine = line + words[n];
+          var metrics = context.measureText(testLine);
+          var testWidth = metrics.width;
+          if (testWidth > maxWidth && n > 0) {
+            context.fillText(line, x, y);
+            line = words[n];
+            y += lineHeight;
           }
-          context.fillText(line, x, y);
+          else {
+            line = testLine;
+          }
         }
+        context.fillText(line, x, y);
+      }
 
-        window.onload = function ()
-          {
-            var canvas = document.getElementById("myCanvas");
-            var context = canvas.getContext("2d");
-            var maxWidth = 300;
-            var lineHeight = 25;
-            var x = (canvas.width - maxWidth) / 2;
-            var y = 60;
-            var text = "要研究一下換行的方式。還有解決文字模糊的問題。";
+      var canvas = document.getElementById('myCanvas');
+      var context = canvas.getContext('2d');
+      var maxWidth = 350;
+      var lineHeight = 35;
+      var x = (canvas.width - maxWidth) / 2;
+      var y = 50;
+      var text = '中文測試就是要兩個字兩個字分開。我不知道這是什麼意思但是就是個換行的動作。所以這樣就解決自動換行的問題，但是怎麼樣解決不需要的空格呢？我是什麼人？我想要什麼？我到底在幹什麼？';
 
-            context.font = "16pt Arial";
-            context.fillStyle = "#333";
+      context.fillStyle="#a1b5cf";
+      context.fillRect(0, 0, 400, 400);
 
-            wrapText(context, text, x, y, maxWidth, lineHeight);
-          };
+      context.font = '16pt PingFang TC';
+      context.fillStyle = '#f9f9f9';
 
-      var c = document.getElementById("myCanvas");
-      var ctx = c.getContext("2d");
-      ctx.fillStyle="#CCCCCC";
-      ctx.fillRect(0, 0, 500, 500);
+      context.fillText("jcwhans", 180, 335);
+      context.fillText("2017.06.23. 星期五", 180, 365);
+
+      context.font = '20pt PingFang TC';
+      wrapText(context, text, x, y, maxWidth, lineHeight);
+
     </script>
-
   </body>
 </html>
