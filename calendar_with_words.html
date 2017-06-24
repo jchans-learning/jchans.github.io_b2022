@@ -94,7 +94,7 @@
         context.font = '20pt PingFang TC';
         wrapText(context, text, x, y, maxWidth, lineHeight);
         canvas.style.display="none";
-        canvasImg.src = canvas.toDataURL();
+        canvasImg.src = canvas.toDataURL('image/jpeg');
       }
 
       createCalendar();
