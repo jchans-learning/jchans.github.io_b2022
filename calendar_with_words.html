@@ -15,14 +15,14 @@
     </style>
   </head>
   <body>
-    請輸入日曆內容：<br>
-    <textarea class="userInput" id="todayMemo">今天...</textarea><br>
     請輸入作者稱呼：<br>
     <input type="text" id="authorName" value="Hans"><br>
+    請輸入日曆內容：<br>
+    <textarea class="userInput" id="todayMemo">今天...</textarea><br>
     <button onclick="createCalendar()">產生日曆</button><br><br>
     <canvas id="myCanvas" width="400" height="400"></canvas>
     <div class="calendarImage">
-      <img id="canvasImg" alt="Right click to save me!" onclick="fbs_click(this)">
+      <img id="canvasImg" alt="Calendar Image">
     </div>
 
     <script>
