@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:image" content=""
     <title></title>
     <style type="text/css" media="screen">
       .userInput {
@@ -21,11 +22,19 @@
     <textarea class="userInput" id="todayMemo">今天...</textarea><br>
     <button onclick="createCalendar()">產生日曆</button><br><br>
     <canvas id="myCanvas" width="400" height="400"></canvas>
-    <div class="calendarImage">
-      <img id="canvasImg" alt="Calendar Image">
+    <img id="canvasImg" alt="Calendar Image"><br>
+    <button onclick="shareToFB()"> Share to FB </button>
+
+    <div
+      class="fb-like"
+      data-share="true"
+      data-width="450"
+      data-show-faces="true">
     </div>
 
     <script>
+
+      // Warp text for a certain width
       function wrapText(context, text, x, y, maxWidth, lineHeight) {
         var words = text.match(/.{1,1}/g);
         var line = '';
@@ -45,6 +54,7 @@
         context.fillText(line, x, y);
       }
 
+
       var canvas = document.getElementById('myCanvas');
       var context = canvas.getContext('2d');
       var maxWidth = 350;
@@ -52,6 +62,7 @@
       var x = (canvas.width - maxWidth) / 2;
       var y = 50;
 
+      // Define weekdays in Chinese characters and Date format
       var today = new Date();
       var dd = today.getDate();
       var mm = today.getMonth()+1; //January is 0!
@@ -76,8 +87,9 @@
 
       var today = yyyy + '.' + mm + '.' + dd + '.' + ' ' + weekday[weekday_number];
 
+      // Draw calendar
       function createCalendar() {
-        context.fillStyle="#a1b5cf";
+        context.fillStyle="#223344"; // use #a1b5cf for light blue
         context.fillRect(0, 0, 400, 400);
 
 
@@ -98,6 +110,34 @@
       }
 
       createCalendar();
+
+      function shareToFB() {
+        FB.ui({
+          method: 'share',
+          display: 'popup',
+          href: 'https://developers.facebook.com/docs/',
+        }, function(response){});
+      }
+
+
+      // facebook app
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId            : '226110051230111',
+          autoLogAppEvents : true,
+          xfbml            : true,
+          version          : 'v2.9'
+        });
+        FB.AppEvents.logPageView();
+      };
+
+      (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "//connect.facebook.net/en_US/sdk.js";
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
 
     </script>
   </body>
