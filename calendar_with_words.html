@@ -22,8 +22,8 @@
     <textarea class="userInput" id="todayMemo">今天...</textarea><br>
     <button onclick="createCalendar()">產生日曆</button><br><br>
     <canvas id="myCanvas" width="400" height="400"></canvas>
-    <img id="canvasImg" alt="Calendar Image"><br><br>
-    <button onclick="shareToFacebookMessenger()">Share to Facebook Messenger</button><br>
+    <img id="canvasImg" alt="Calendar Image"><br>
+    <button onclick="shareToFacebookMessenger()">Share to Facebook Messenger</button><br><br>
 
     <div
       class="fb-like"
@@ -92,8 +92,6 @@
         context.fillStyle="#223344"; // use #a1b5cf for light blue
         context.fillRect(0, 0, 400, 400);
 
-
-
         var text = document.getElementById("todayMemo").value;
         var author_name = document.getElementById("authorName").value;
 
@@ -106,7 +104,7 @@
         context.font = '20pt PingFang TC';
         wrapText(context, text, x, y, maxWidth, lineHeight);
         canvas.style.display="none";
-        canvasImg.src = canvas.toDataURL('image/jpeg');
+        canvasImg.src = canvas.toDataURL('image/png');
       }
 
       createCalendar();
@@ -130,9 +128,14 @@
          fjs.parentNode.insertBefore(js, fjs);
        }(document, 'script', 'facebook-jssdk'));
 
-       function shareToFacebookMessenger() {
-          window.open('fb-messenger://share?link=' + encodeURIComponent() + '&app_id=' + encodeURIComponent(226110051230111));
+       function shareToFacebookMessenger(){
+         FB.ui({
+           method: 'share',
+           display: 'popup',
+           href: 'https://developers.facebook.com/docs/',
+         }, function(response){});
        }
+
     </script>
   </body>
 </html>
