@@ -21,14 +21,20 @@
     <textarea class="userInput" id="todayMemo">今天...</textarea><br>
     <button onclick="createCalendar()">產生日曆</button><br><br>
     <canvas id="myCanvas" width="400" height="400"></canvas>
-    <img id="canvasImg" alt="Click to save image." onclick="openCalendarImage()"><br>
+    <img id="canvasImg" alt="Click to save image."><br>
+
+
+
+    <!-- not yet...
 
     <div
       class="fb-like"
       data-share="true"
       data-width="450"
       data-show-faces="true">
-    </div>
+
+    </div> -->
+
 
     <script>
 
@@ -112,12 +118,6 @@
       }
 
       createCalendar();
-
-
-      function openCalendarImage(){
-        window.open(canvasImg.src );
-      }
-
 
       // facebook app
       window.fbAsyncInit = function() {
