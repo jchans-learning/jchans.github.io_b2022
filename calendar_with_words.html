@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>日曆產生器</title>
+    <link href='https://fonts.googleapis.com/css?family=Noto Sans' rel='stylesheet'>
     <style type="text/css" media="screen">
       .userInput {
         margin: 1px;
@@ -11,6 +12,10 @@
         width: 400px;
         height: 150px;
         resize: none;
+      }
+
+      body {
+          font-family: 'Noto Sans';font-size: 22px;
       }
     </style>
   </head>
@@ -86,22 +91,16 @@
         var text = document.getElementById("todayMemo").value;
         var author_name = document.getElementById("authorName").value;
 
-        context.font = '16pt PingFang TC';
+        context.font = '16pt Noto Sans';
         context.fillStyle = '#f9f9f9';
 
         context.fillText(author_name, 180, 335);
         context.fillText(today, 180, 365);
 
-        context.font = '20pt PingFang TC';
+        context.font = '20pt Noto Sans';
         wrapText(context, text, x, y, maxWidth, lineHeight);
         canvas.style.display="none";
         canvasImg.src = canvas.toDataURL('image/png');
-      }
-
-
-
-      function goToCalendarImage(){
-        var go_to_calendar_image = canvas.toDataURL('image/png');
       }
 
       createCalendar();
