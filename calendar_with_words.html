@@ -6,6 +6,13 @@
     <title>日曆產生器</title>
     <link href='https://fonts.googleapis.com/css?family=Noto Sans' rel='stylesheet'>
     <style type="text/css" media="screen">
+
+      html, body {
+        width:  100%;
+        height: 100%;
+        margin: 0px;
+      }
+
       .userInput {
         margin: 1px;
         padding: 1px;
@@ -15,7 +22,7 @@
       }
 
       body {
-          font-family: 'Noto Sans';font-size: 22px;
+          font-family: 'Noto Sans';font-size: 20px;
       }
     </style>
   </head>
@@ -26,7 +33,8 @@
     <textarea class="userInput" id="todayMemo">今天...</textarea><br>
     <button onclick="createCalendar()">產生日曆</button><br><br>
     <canvas id="myCanvas" width="400" height="400"></canvas>
-    <img id="canvasImg" alt="Click to save image."><br>
+    <img id="canvasImg" alt="Canvas Image"><br>
+    <img id="ImgTwo" alt="Canvas for High DPI">
 
     <script>
 
@@ -123,6 +131,50 @@
          js.src = "//connect.facebook.net/en_US/sdk.js";
          fjs.parentNode.insertBefore(js, fjs);
        }(document, 'script', 'facebook-jssdk'));
+
+
+       // Adjust canvas image for high dpi devices
+       var PIXEL_RATIO = (function () {
+           var ctx = document.getElementById('myCanvas').getContext("2d"),
+               dpr = window.devicePixelRatio || 1,
+               bsr = ctx.webkitBackingStorePixelRatio ||
+                     ctx.mozBackingStorePixelRatio ||
+                     ctx.msBackingStorePixelRatio ||
+                     ctx.oBackingStorePixelRatio ||
+                     ctx.backingStorePixelRatio || 1;
+
+           return dpr / bsr;
+       })();
+
+
+       createHiDPICanvas = function(w, h, ratio) {
+           if (!ratio) { ratio = PIXEL_RATIO; }
+           var can = document.getElementById('myCanvas');
+           can.width = w * ratio;
+           can.height = h * ratio;
+           can.style.width = w + "px";
+           can.style.height = h + "px";
+           can.getContext("2d").setTransform(ratio, 0, 0, ratio, 0, 0);
+           return can;
+       }
+
+       //Create canvas with the device resolution.
+       var myNewCanvas = createHiDPICanvas(500, 500);
+
+       ctx.fillRect(0, 0, 400, 400);
+
+       ctx.font = '16pt Noto Sans';
+       ctx.fillStyle = '#f9f9f9';
+
+       ctx.fillText(author_name, 180, 335);
+       ctx.fillText(today, 180, 365);
+
+       ctx.font = '20pt Noto Sans';
+       wrapText(context, text, x, y, maxWidth, lineHeight);
+       ImgTwo.src = myNewCanvas.toDataURL('image/png');
+       //Create canvas with a custom resolution.
+       //var myCustomCanvas = createHiDPICanvas(500, 200, 4);
+
 
     </script>
   </body>
