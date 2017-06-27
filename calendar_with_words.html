@@ -34,7 +34,6 @@
     <button onclick="createCalendar()">產生日曆</button><br><br>
     <canvas id="myCanvas" width="400" height="400"></canvas>
     <img id="canvasImg" alt="Canvas Image"><br>
-    <img id="ImgTwo" alt="Canvas for High DPI">
 
     <script>
 
@@ -161,17 +160,6 @@
        //Create canvas with the device resolution.
        var myNewCanvas = createHiDPICanvas(400, 400);
 
-       ctx.fillRect(0, 0, 400, 400);
-
-       ctx.font = '16pt Noto Sans';
-       ctx.fillStyle = '#f9f9f9';
-
-       ctx.fillText(author_name, 180, 335);
-       ctx.fillText(today, 180, 365);
-
-       ctx.font = '20pt Noto Sans';
-       wrapText(context, text, x, y, maxWidth, lineHeight);
-       ImgTwo.src = myNewCanvas.toDataURL('image/png');
        //Create canvas with a custom resolution.
        //var myCustomCanvas = createHiDPICanvas(500, 200, 4);
 
