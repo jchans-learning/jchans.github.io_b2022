@@ -33,7 +33,9 @@
     <textarea class="userInput" id="todayMemo">今天...</textarea><br>
     <button onclick="createCalendar()">產生日曆</button><br><br>
     <canvas id="myCanvas" width="400" height="400"></canvas>
-    <img id="canvasImg" alt="Canvas Image"><br>
+    <div style="height: 100%; width: 100%;">
+      <img id="canvasImg" alt="Canvas Image"><br>
+    </div>
 
     <script>
 
@@ -110,27 +112,7 @@
         canvasImg.src = canvas.toDataURL('image/png');
       }
 
-      createCalendar();
-
-      // facebook app
-      window.fbAsyncInit = function() {
-        FB.init({
-          appId            : '226110051230111',
-          autoLogAppEvents : true,
-          xfbml            : true,
-          version          : 'v2.9'
-        });
-        FB.AppEvents.logPageView();
-      };
-
-      (function(d, s, id){
-         var js, fjs = d.getElementsByTagName(s)[0];
-         if (d.getElementById(id)) {return;}
-         js = d.createElement(s); js.id = id;
-         js.src = "//connect.facebook.net/en_US/sdk.js";
-         fjs.parentNode.insertBefore(js, fjs);
-       }(document, 'script', 'facebook-jssdk'));
-
+      // createCalendar();
 
        // Adjust canvas image for high dpi devices
        var PIXEL_RATIO = (function () {
@@ -163,6 +145,24 @@
        //Create canvas with a custom resolution.
        //var myCustomCanvas = createHiDPICanvas(500, 200, 4);
 
+       // facebook app
+       window.fbAsyncInit = function() {
+         FB.init({
+           appId            : '226110051230111',
+           autoLogAppEvents : true,
+           xfbml            : true,
+           version          : 'v2.9'
+         });
+         FB.AppEvents.logPageView();
+       };
+
+       (function(d, s, id){
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) {return;}
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/en_US/sdk.js";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
 
     </script>
   </body>
