@@ -98,13 +98,13 @@
         var text = document.getElementById("todayMemo").value;
         var author_name = document.getElementById("authorName").value;
 
-        context.font = '16pt Noto Sans';
+        context.font = '16pt Arial';
         context.fillStyle = '#f9f9f9';
 
         context.fillText(author_name, 180, 335);
         context.fillText(today, 180, 365);
 
-        context.font = '20pt Noto Sans';
+        context.font = '20pt Arial';
         wrapText(context, text, x, y, maxWidth, lineHeight);
         canvas.style.display="none";
         canvasImg.src = canvas.toDataURL('image/png');
