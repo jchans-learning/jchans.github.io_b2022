@@ -15,7 +15,7 @@
     }
 
     table {
-      border-spacing: 0.5rem;
+      border-spacing: 1rem;
     }
     </style>
     <title>COC7 Character Generation</title>
@@ -26,18 +26,67 @@
 
     <table>
       <tr>
-        <td>簡寫</td>
-        <td>屬性</td>
-        <td>生成擲骰</td>
-        <td>擲骰結果</td>
-        <td>值</td>
+        <th>簡寫</th>
+        <th>屬性</th>
+        <th>生成擲骰</th>
+        <th>擲骰結果</th>
+        <th>值</th>
       </tr>
       <tr>
-        <td>力量</td>
         <td>STR</td>
+        <td>力量</td>
         <td>3D6 * 5</td>
         <td id="str_roll"></td>
         <td id="str"></td>
+      </tr>
+      <tr>
+        <td>CON</td>
+        <td>體質</td>
+        <td>3D6 * 5</td>
+        <td id="con_roll"></td>
+        <td id="con"></td>
+      </tr>
+      <tr>
+        <td>SIZ</td>
+        <td>尺寸</td>
+        <td>(2D6 + 6) * 5</td>
+        <td id="siz_roll"></td>
+        <td id="siz"></td>
+      </tr>
+      <tr>
+        <td>DEX</td>
+        <td>敏捷</td>
+        <td>3D6 * 5</td>
+        <td id="dex_roll"></td>
+        <td id="dex"></td>
+      </tr>
+      <tr>
+        <td>APP</td>
+        <td>外表</td>
+        <td>3D6 * 5</td>
+        <td id="app_roll"></td>
+        <td id="app"></td>
+      </tr>
+      <tr>
+        <td>INT</td>
+        <td>智力</td>
+        <td>(2D6 + 6) * 5</td>
+        <td id="int_roll"></td>
+        <td id="int"></td>
+      </tr>
+      <tr>
+        <td>POW</td>
+        <td>意志</td>
+        <td>3D6 * 5</td>
+        <td id="pow_roll"></td>
+        <td id="pow"></td>
+      </tr>
+      <tr>
+        <td>EDU</td>
+        <td>教育</td>
+        <td>(2D6 + 6) * 5</td>
+        <td id="edu_roll"></td>
+        <td id="edu"></td>
       </tr>
 
     <script src="resources/coc7chargen.js"></script>
