@@ -16,32 +16,45 @@ function charPropertyGen() {
 
 var str_roll = new charPropertyGen();
 document.getElementById("str_roll").innerHTML = str_roll.roll_results_3d;
-document.getElementById("str").innerHTML = str_roll.roll_dices_3d * 5;
+var str = str_roll.roll_dices_3d * 5;
+document.getElementById("str").innerHTML = str;
 
 var con_roll = new charPropertyGen();
 document.getElementById("con_roll").innerHTML = con_roll.roll_results_3d;
-document.getElementById("con").innerHTML = con_roll.roll_dices_3d * 5;
+var con = con_roll.roll_dices_3d * 5;
+document.getElementById("con").innerHTML = con;
 
 var siz_roll = new charPropertyGen();
 document.getElementById("siz_roll").innerHTML = siz_roll.roll_results_2d;
-document.getElementById("siz").innerHTML = (siz_roll.roll_dices_2d + 6) * 5;
+var siz = (siz_roll.roll_dices_2d + 6) * 5;
+document.getElementById("siz").innerHTML = siz;
 
 var dex_roll = new charPropertyGen();
 document.getElementById("dex_roll").innerHTML = dex_roll.roll_results_3d;
-document.getElementById("dex").innerHTML = dex_roll.roll_dices_3d * 5;
+var dex = dex_roll.roll_dices_3d * 5;
+document.getElementById("dex").innerHTML = dex;
 
 var app_roll = new charPropertyGen();
 document.getElementById("app_roll").innerHTML = app_roll.roll_results_3d;
-document.getElementById("app").innerHTML = app_roll.roll_dices_3d * 5;
+var app = app_roll.roll_dices_3d * 5;
+document.getElementById("app").innerHTML = app;
 
-var int_roll = new charPropertyGen();
-document.getElementById("int_roll").innerHTML = int_roll.roll_results_2d;
-document.getElementById("int").innerHTML = (int_roll.roll_dices_2d + 6) * 5;
+var inte_roll = new charPropertyGen();
+document.getElementById("inte_roll").innerHTML = inte_roll.roll_results_2d;
+var inte = (inte_roll.roll_dices_2d + 6) * 5;
+document.getElementById("inte").innerHTML = inte;
 
 var pow_roll = new charPropertyGen();
 document.getElementById("pow_roll").innerHTML = pow_roll.roll_results_3d;
-document.getElementById("pow").innerHTML = pow_roll.roll_dices_3d * 5;
+var pow = pow_roll.roll_dices_3d * 5;
+document.getElementById("pow").innerHTML = pow;
 
 var edu_roll = new charPropertyGen();
 document.getElementById("edu_roll").innerHTML = edu_roll.roll_results_2d;
-document.getElementById("edu").innerHTML = (edu_roll.roll_dices_2d + 6) * 5;
+var edu = (edu_roll.roll_dices_2d + 6) * 5;
+document.getElementById("edu").innerHTML = edu;
+
+var luck_roll = new charPropertyGen();
+document.getElementById("luck_roll").innerHTML = luck_roll.roll_results_3d;
+var luck = luck_roll.roll_dices_3d * 5;
+document.getElementById("luck").innerHTML = luck;
