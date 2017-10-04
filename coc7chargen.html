@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type="text/css" media="screen">
+    h1 {
+      font-size: 20px;
+      border-bottom: 1px solid #cccccc;
+    }
+
+    p {
+      padding: 10px;
+      background-color: papayaWhip;
+    }
+
+    table {
+      border-spacing: 0.5rem;
+    }
+    </style>
+    <title>COC7 Character Generation</title>
+  </head>
+  <body>
+
+    <h1>COC7 Character Generation</h1>
+
+    <table>
+      <tr>
+        <td>簡寫</td>
+        <td>屬性</td>
+        <td>生成擲骰</td>
+        <td>擲骰結果</td>
+        <td>值</td>
+      </tr>
+      <tr>
+        <td>力量</td>
+        <td>STR</td>
+        <td>3D6 * 5</td>
+        <td id="str_roll"></td>
+        <td id="str"></td>
+      </tr>
+
+    <script src="resources/coc7chargen.js"></script>
+
+  </body>
+</html>
