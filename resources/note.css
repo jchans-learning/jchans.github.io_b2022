@@ -16,6 +16,13 @@ p {
   background-color: papayaWhip;
 }
 
+pre {
+  margin-left: 5%;
+  margin-right: 5%;
+  padding: 1em;
+  background-color: grey;
+}
+
 .special {
   border: 1px solid green;
 }
