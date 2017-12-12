@@ -1,0 +1,68 @@
+{
+  "_from": "startbootstrap-3-col-portfolio",
+  "_id": "startbootstrap-3-col-portfolio@4.0.0-beta",
+  "_inBundle": false,
+  "_integrity": "sha1-YyLotMGT21jhV7HGsNL2k/kQAiw=",
+  "_location": "/startbootstrap-3-col-portfolio",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "startbootstrap-3-col-portfolio",
+    "name": "startbootstrap-3-col-portfolio",
+    "escapedName": "startbootstrap-3-col-portfolio",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/startbootstrap-3-col-portfolio/-/startbootstrap-3-col-portfolio-4.0.0-beta.tgz",
+  "_shasum": "6322e8b4c193db58e157b1c6b0d2f693f910022c",
+  "_spec": "startbootstrap-3-col-portfolio",
+  "_where": "/home/hans/projects/jchans.github.io",
+  "author": {
+    "name": "Start Bootstrap"
+  },
+  "bugs": {
+    "url": "https://github.com/BlackrockDigital/startbootstrap-3-col-portfolio/issues",
+    "email": "feedback@startbootstrap.com"
+  },
+  "bundleDependencies": false,
+  "contributors": [
+    {
+      "name": "David Miller",
+      "url": "http://davidmiller.io/"
+    }
+  ],
+  "dependencies": {
+    "bootstrap": "^4.0.0-beta",
+    "jquery": "^3.2.1",
+    "popper.js": "1.12.3"
+  },
+  "deprecated": false,
+  "description": "A three column portfolio HTML template built with Bootstrap",
+  "devDependencies": {
+    "browser-sync": "2.18.13",
+    "gulp": "^3.9.1"
+  },
+  "homepage": "https://startbootstrap.com/template-overviews/3-col-portfolio",
+  "keywords": [
+    "css",
+    "sass",
+    "html",
+    "responsive",
+    "theme",
+    "template"
+  ],
+  "license": "MIT",
+  "name": "startbootstrap-3-col-portfolio",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BlackrockDigital/startbootstrap-3-col-portfolio.git"
+  },
+  "title": "3 Col Portfolio",
+  "version": "4.0.0-beta"
+}
