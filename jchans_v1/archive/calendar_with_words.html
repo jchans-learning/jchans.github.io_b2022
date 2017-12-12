@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>日曆產生器</title>
+    <link href='https://fonts.googleapis.com/css?family=Noto Sans' rel='stylesheet'>
+    <style type="text/css" media="screen">
+
+      html, body {
+        width:  100%;
+        height: 100%;
+        margin: 0px;
+      }
+
+      .userInput {
+        margin: 1px;
+        padding: 1px;
+        width: 400px;
+        height: 150px;
+        resize: none;
+      }
+
+      body {
+          font-family: 'Noto Sans';font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    請輸入作者稱呼：<br>
+    <input type="text" id="authorName" value="HAN$"><br>
+    請輸入日曆內容：<br>
+    <textarea class="userInput" id="todayMemo">今天...</textarea><br>
+    <button onclick="createCalendar()">產生日曆</button><br><br>
+    <canvas id="myCanvas" width="400" height="400"></canvas>
+    <img id="canvasImg" alt="Canvas Image"><br>
+
+    <script>
+
+      // Warp text for a certain width
+      function wrapText(context, text, x, y, maxWidth, lineHeight) {
+        var words = text.match(/.{1,1}/g);
+        var line = '';
+        for(var n = 0; n < words.length; n++) {
+          var testLine = line + words[n];
+          var metrics = context.measureText(testLine);
+          var testWidth = metrics.width;
+          if (testWidth > maxWidth && n > 0) {
+            context.fillText(line, x, y);
+            line = words[n];
+            y += lineHeight;
+          }
+          else {
+            line = testLine;
+          }
+        }
+        context.fillText(line, x, y);
+      }
+
+
+      var canvas = document.getElementById('myCanvas');
+      var context = canvas.getContext('2d');
+      var maxWidth = 350;
+      var lineHeight = 35;
+      var x = (canvas.width - maxWidth) / 2;
+      var y = 50;
+
+      // Define weekdays in Chinese characters and Date format
+      var today = new Date();
+      var dd = today.getDate();
+      var mm = today.getMonth()+1; //January is 0!
+      var yyyy = today.getFullYear();
+      var weekday_number = today.getDay();
+      var weekday=new Array(7);
+      weekday[0]="星期日";
+      weekday[1]="星期一";
+      weekday[2]="星期二";
+      weekday[3]="星期三";
+      weekday[4]="星期四";
+      weekday[5]="星期五";
+      weekday[6]="星期六";
+
+      if(dd<10) {
+          dd = '0'+dd
+      }
+
+      if(mm<10) {
+          mm = '0'+mm
+      }
+
+      var today = yyyy + '.' + mm + '.' + dd + '.' + ' ' + weekday[weekday_number];
+
+      // Draw calendar
+      function createCalendar() {
+        context.fillStyle="#223344"; // use #a1b5cf for light blue
+        context.fillRect(0, 0, 400, 400);
+
+        var text = document.getElementById("todayMemo").value;
+        var author_name = document.getElementById("authorName").value;
+
+        context.font = '16pt Arial';
+        context.fillStyle = '#f9f9f9';
+
+        context.fillText(author_name, 180, 335);
+        context.fillText(today, 180, 365);
+
+        context.font = '20pt Arial';
+        wrapText(context, text, x, y, maxWidth, lineHeight);
+        canvas.style.display="none";
+        canvasImg.src = canvas.toDataURL('image/png');
+      }
+
+      //create image when open the page
+      createCalendar();
+
+       // Adjust canvas image for high dpi devices
+       var PIXEL_RATIO = (function () {
+           var ctx = document.getElementById('myCanvas').getContext("2d"),
+               dpr = window.devicePixelRatio || 1,
+               bsr = ctx.webkitBackingStorePixelRatio ||
+                     ctx.mozBackingStorePixelRatio ||
+                     ctx.msBackingStorePixelRatio ||
+                     ctx.oBackingStorePixelRatio ||
+                     ctx.backingStorePixelRatio || 1;
+
+           return dpr / bsr;
+       })();
+
+
+       createHiDPICanvas = function(w, h, ratio) {
+           if (!ratio) { ratio = PIXEL_RATIO; }
+           var can = document.getElementById('myCanvas');
+           can.width = w * ratio;
+           can.height = h * ratio;
+           can.style.width = w + "px";
+           can.style.height = h + "px";
+           can.getContext("2d").setTransform(ratio, 0, 0, ratio, 0, 0);
+           return can;
+       }
+
+       //Create canvas with the device resolution.
+       var myNewCanvas = createHiDPICanvas(400, 400);
+
+       //Create canvas with a custom resolution.
+       //var myCustomCanvas = createHiDPICanvas(500, 200, 4);
+
+    </script>
+  </body>
+</html>
