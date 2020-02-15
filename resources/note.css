@@ -1,12 +1,12 @@
 h1 {
-  margin-left: 3%;
-  margin-right: 3%;
+  margin-left: 17%;
+  margin-right: 17%;
   border-bottom: 1px solid #cccccc;
 }
 
 h2 {
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: 17%;
+  margin-right: 17%;
 }
 
 p {
@@ -17,8 +17,8 @@ p {
 }
 
 pre {
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: 20%;
+  margin-right: 20%;
   padding: 1em;
   background-color: gainsboro;
 
@@ -35,8 +35,8 @@ pre {
 }
 
 .list {
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: 20%;
+  margin-right: 20%;
 }
 
 #user-name {
