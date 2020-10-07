@@ -5,8 +5,6 @@ https://dnd.wizards.com/articles/features/systems-reference-document-srd
 
 # 法律聲明
 
-法律聲明
-
 本授權僅透過開放遊戲授權 1.0a 版（ OGL, Open Gaming License, Version 1.0a ）准許複製，修改與散布合輯為系統參考文件 5.1 （ “SRD5”, System Reference Document 5.1 ）的檔案。
 
 這份資料是以開放遊戲授權 1.0a 版授權釋出，在使用這份資料前你應該要閱讀並了解此授權的條款。
