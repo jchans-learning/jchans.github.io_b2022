@@ -1,5 +1,8 @@
 # 5e SRD Chinese Traditional WIP
 
+V5.1 Systems Reference Document (including the OGL)取自：
+https://dnd.wizards.com/articles/features/systems-reference-document-srd
+
 # 法律聲明
 
 法律聲明
