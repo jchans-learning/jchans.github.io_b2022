@@ -3,6 +3,9 @@
 V5.1 Systems Reference Document (including the OGL)取自：
 https://dnd.wizards.com/articles/features/systems-reference-document-srd
 
+此 OGL 譯本依據 WotC 的 Fan Content Policy 製作
+https://company.wizards.com/fancontentpolicy
+
 # 法律聲明
 
 本授權僅透過開放遊戲授權 1.0a 版（ OGL, Open Gaming License, Version 1.0a ）准許複製，修改與散布合輯為系統參考文件 5.1 （ “SRD5”, System Reference Document 5.1 ）的檔案。
