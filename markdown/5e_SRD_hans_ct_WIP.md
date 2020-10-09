@@ -67,5 +67,15 @@ SRD-OGL_V5.1 法律聲明頁面的非官方中文翻譯，譯者並非法律專�
 https://company.wizards.com/fancontentpolicy
 
 
-
 （待補充翻譯名詞對照表）
+
+
+
+# 種族 Races
+
+### 種族特質 Racial traits
+
+對每個種族的描述包括對該種族成員來說常見的種族特質。以下項目在大部分的種族特徵中出現。
+
+#### 屬性值提昇 Ability Score Increase
+所有種族提昇一個或更多該角色的屬性值。
