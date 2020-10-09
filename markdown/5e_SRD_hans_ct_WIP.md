@@ -139,3 +139,6 @@ https://company.wizards.com/fancontentpolicy
 **屬性質提昇**。你的睿智屬性質（ Wisdom Score ）加 1 。
 
 **矮人健壯 Dwarven Toughness**。你的生命值最大值增加1點，且在每次你提升等級時再增加1點。
+
+## 精靈 Elf
+
