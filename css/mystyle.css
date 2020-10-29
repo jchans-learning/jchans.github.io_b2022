@@ -1,13 +1,13 @@
+div {
+    margin: 5% 10% 5% 10%;
+}
+
 .pagetitle {
     text-align: center;
-    font-size: 5em;
+    font-size: 2em;
 }
 
-div {
-    margin: 5% 10% 0 10%;
-}
-
-p {
+.linkbox {
     padding: 1em;
     background-color: khaki;
     margin: 10px;
