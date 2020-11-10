@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./0.style.css">
+    <style>
+        #title {
+            color: yellowgreen;
+        }
+
+        h1 {
+            color: tomato;
+        }
+
+        .text {
+            color: violet;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <!-- 比較 html tag, id, class 的權重 -->
+        <h1>Hello</h1>
+        <h1 id="title">Hello with title</h1>
+        <h1 class="text">Hello with text class</h1>
+        <h2>H2 Hello</h2>
+        <h1 id="title" class="text">Hello with title and text</h1>
+    </div>
+</body>
+
+</html>

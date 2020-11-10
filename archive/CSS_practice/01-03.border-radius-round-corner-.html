@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>border radiu, many boxes</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: #afa;
+            margin: 10px;
+            /* 加上 margin 讓上下兩個 box 不會黏在一起 */
+        }
+
+        .box2 {
+            width: 200px;
+            height: 200px;
+            background-color: #afa;
+            margin: 10px;
+            border-radius: 50px;
+            /* 單一圓角數值，表示四個角都用一樣的數值。 */
+        }
+
+        .box3 {
+            width: 200px;
+            height: 200px;
+            background-color: #afa;
+            margin: 10px;
+            border-radius: 50px 90px 20px 0px;
+            /* 四個數值分別表示一個方塊的，左上，右上，右下，左下，的角落變化 */
+            /* 注意數值之間僅用空格分隔，不用逗號 */
+        }
+
+        .box4 {
+            width: 200px;
+            height: 200px;
+            background-color: #afa;
+            margin: 10px;
+            border-radius: 50px 0px;
+            /* 只有兩個數值定義出左上，右上，對角的數值相同。 */
+            /* 注意數值之間僅用空格分隔，不用逗號 */
+        }
+
+        .box5 {
+            /* 長方形 box */
+            width: 200px;
+            height: 400px;
+            background-color: #afa;
+            margin: 10px;
+            border-radius: 50px 0px;
+        }
+
+        .box6 {
+            /* 扇形 */
+            width: 200px;
+            height: 200px;
+            background-color: #afa;
+            margin: 10px;
+            border-radius: 100% 0 0 0;
+            /* 左上角數值給滿，另外三個角數值不動 */
+        }
+
+        .box7 {
+            /* 圓形 */
+            width: 200px;
+            height: 200px;
+            background-color: #afa;
+            margin: 10px;
+            border-radius: 50%;
+            /* 四個角在正方形的盒子邊界，數值給 50% 即可形成圓形。我也不知道為什麼，有空再去查這個數值的意義吧。 */
+        }
+
+        .box8 {
+            /* 畫個檸檬 */
+            width: 200px;
+            height: 200px;
+            background-color: #afa;
+            margin: 10px;
+            border-radius: 50% 30px 50% 10px;
+            /* 四個角在正方形的盒子邊界，數值給 50% 即可形成圓形。我也不知道為什麼，有空再去查這個數值的意義吧。 */
+            /* 注意數值之間僅用空格分隔，不用逗號 */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="text">
+        <h1>Hans' Practice</h1>
+    </div>
+    <!-- 快捷鍵： 「Shift + Alt + ↓」來複製一行程式 -->
+    <!-- 快捷鍵： 「Alt + L + O」用 Live Server 開啟頁面 -->
+    <div class="box"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+    <div class="box5"></div>
+    <div class="box6"></div>
+    <div class="box7"></div>
+    <div class="box8"></div>
+</body>
+
+</html>
