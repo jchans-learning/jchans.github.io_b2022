@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex2</title>
+    <style>
+        /* 定義最外層的 div ， card ，一張卡片 */
+        .card {
+            width: 200px;
+            height: 220px;
+            background-color: lightblue;
+            border-radius: 10px;
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        /* figure 這邊跟 ex1 做的東西是一樣的。 */
+        .figure {
+            width: 100px;
+            height: 100px;
+            overflow: hidden;
+            border-radius: 50%;
+            margin: 0 auto;
+        }
+
+        .figure img {
+            width: 100%;
+        }
+
+        /* 注意這邊指定 h3 的樣式，是給 h3 標籤，前面沒有 "." ，指定尺寸的時候要注意單位，例如 px 或 % 等 */
+        h3 {
+            width: 80%;
+            /* 用 h3 的底線來畫分隔線 */
+            border-bottom: 1px dashed red;
+            margin: 10px auto;
+            padding-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 先做出卡片的結構，然後再把樣式做出來 -->
+    <div class="card">
+        <div class="figure">
+            <img src="./images/ex1/ex1_pic1.jpg" alt="">
+        </div>
+
+        <h3>Jean</h3>
+        <p>Hello, nice to meet you.</p>
+    </div>
+</body>
+
+</html>
