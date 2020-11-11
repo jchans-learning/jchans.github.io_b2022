@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        /* 其實是 border-box ，左上角邊框開始填滿 */
+        /* 預設是 padding-box */
+        /* content-box 從左上角 box-model 內容開始填滿 */
+        body {
+            background-color: #afa;
+        }
+
+        .box {
+            width: 300px;
+            height: 300px;
+            background: url('./images/nook_small.jpg') no-repeat;
+            float: left;
+            margin: 10px;
+            border: 10px dashed #fff;
+            padding: 20px;
+        }
+
+        .border-box {
+            background-origin: border-box;
+        }
+
+        .padding-box {
+            background-origin: padding-box;
+        }
+
+        .content-box {
+            background-origin: content-box;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box border-box"></div>
+    <div class="box padding-box"></div>
+    <div class="box content-box"></div>
+</body>
+<!-- 以上是老師上課講的範例，給著打，晚點複習自己再重做一次 -->
+
+</html>
