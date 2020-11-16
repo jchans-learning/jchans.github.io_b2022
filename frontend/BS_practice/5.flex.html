@@ -28,7 +28,7 @@
             width: 70%;
             background-color: #aff;
             display: flex;
-            flex-direction: row-reverse;
+            flex-direction: column;
         }
 
         footer {
@@ -64,6 +64,26 @@
 
     </div>
     <footer>footer</footer>
+
+    <script>
+        function getRandomInt(max) {
+            return Math.floor(Math.random() * Math.floor(max - 50) + 100);
+        }
+
+        function getRBGA() {
+            return `linear-gradient(135deg, rgba(${getRandomInt(100) + 100},${getRandomInt(100) + 100},${getRandomInt(100) + 100},.5), rgba(${getRandomInt(200)},${getRandomInt(200)},${getRandomInt(200)},.8)`
+        }
+
+        const elements = document.querySelectorAll('.autobg');
+
+        Array.from(elements).forEach((element, index) => {
+            element.style.backgroundImage = getRBGA();
+        });
+
+// $('.autobg').each(function (index, currentElement) {
+//     currentElement.style.backgroundImage = getRBGA();
+// });
+    </script>
 </body>
 
 </html>
