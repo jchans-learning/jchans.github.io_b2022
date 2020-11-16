@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>order</title>
+
+    <style>
+        .container {
+            width: 1000px;
+            margin: 0 auto;
+            background-color: #ccc;
+            padding: 10px;
+        }
+
+        .row {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-end;
+            height: 400px;
+            flex-wrap: wrap;
+        }
+
+        .box1 {
+            order: 1;
+        }
+
+        .box5 {
+            order: -1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="box autobg box1">box1</div>
+            <div class="box autobg box2">box2</div>
+            <div class="box autobg box3">box3</div>
+            <div class="box autobg box4">box4</div>
+            <div class="box autobg box5">box5</div>
+            <div class="box autobg box6">box6</div>
+            <div class="box autobg box7">box7</div>
+            <div class="box autobg box8">box8</div>
+            <div class="box autobg box9">box9</div>
+            <div class="box autobg box10">box10</div>
+        </div>
+    </div>
+
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+    <script>
+        function getRandomInt(max) {
+            return Math.floor(Math.random() * Math.floor(max - 50) + 100);
+        }
+
+        function getRBGA() {
+            return `linear-gradient(135deg, rgba(${getRandomInt(100) + 100},${getRandomInt(100) + 100},${getRandomInt(100) + 100},.5), rgba(${getRandomInt(200)},${getRandomInt(200)},${getRandomInt(200)},.8)`
+        }
+
+        const elements = document.querySelectorAll('.autobg');
+
+        Array.from(elements).forEach((element, index) => {
+            element.style.backgroundImage = getRBGA();
+        });
+
+// $('.autobg').each(function (index, currentElement) {
+//     currentElement.style.backgroundImage = getRBGA();
+// });
+    </script>
+
+
+</body>
+
+</html>
