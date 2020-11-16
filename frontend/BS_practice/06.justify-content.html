@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>justify content</title>
+    <style>
+        .container {
+            width: 560px;
+            margin: 0 auto;
+            background-color: #ccc;
+            padding: 1px;
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .box {
+            width: 100px;
+            height: 200px;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="box autobg">box1</div>
+            <div class="box autobg">box2</div>
+            <div class="box autobg">box3</div>
+        </div>
+    </div>
+
+    <script>
+        function getRandomInt(max) {
+            return Math.floor(Math.random() * Math.floor(max - 50) + 100);
+        }
+
+        function getRBGA() {
+            return `linear-gradient(135deg, rgba(${getRandomInt(256)},${getRandomInt(256)},${getRandomInt(256)},.5), rgba(${getRandomInt(256)},${getRandomInt(256)},${getRandomInt(256)},.8)`
+        }
+
+        const elements = document.querySelectorAll('.autobg');
+
+        Array.from(elements).forEach((element, index) => {
+            element.style.backgroundImage = getRBGA();
+        });
+
+        // $('.autobg').each(function (index, currentElement) {
+        //     currentElement.style.backgroundImage = getRBGA();
+        // });
+    </script>
+</body>
+
+</html>
