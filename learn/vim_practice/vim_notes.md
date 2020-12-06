@@ -8,6 +8,8 @@ Vim 的兩個模式：
 按 i 鍵來切換到 INSERT mode ，輸入完成後，按 Esc 切換回 NORMAL mode
 
 基本上切換 INSERT / NORMAL 模式就是用 i / Esc 
+- i 進入 INSERT mode
+- Esc 離開 Insert mode
 
 
 
