@@ -19,7 +19,9 @@
 - 在 Windows 10 的環境下使用 Git ，我用 PowerShell ，一些指令與 Unix-like 的 Terminal 比較接近。
 - 但是 PowerShell 的內建顏色在顯示 git status 的時候有點難閱讀，所以想找找看有沒有調整的作法，找到了類似 [oh-my-zsh](https://ohmyz.sh/) 的模組 [oh-my-posh](https://github.com/JanDeDobbeleer/oh-my-posh) 。
 
-![oh-my-posh 使用中的 Windows Terminal](./learn/win10/images/using-oh-my-posh.PNG)
+![oh-my-posh 使用中的 Windows Terminal](images/using-oh-my-posh.jpg)
+
+
 
 
 
