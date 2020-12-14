@@ -22,6 +22,6 @@
 
 ![oh-my-posh 使用中的 Windows Terminal](images/using-oh-my-posh.jpg)
 
-比較 PowerShell 與 Windows Terminal 用 oh-my-posh 的效果：
+比較 Windows Terminal（下圖上） 與 PowerShell （下圖下）用 oh-my-posh 的效果：
 
 ![比較 PowerShell 與 Windows Terminal 用 oh-my-posh 的效果](images/using-oh-my-posh_PowerShell.jpg)
