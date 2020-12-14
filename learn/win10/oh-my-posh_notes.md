@@ -14,14 +14,14 @@
 - [安裝 Windows Terminal](https://www.microsoft.com/zh-tw/p/windows-terminal/9n0dx20hk701?activetab=pivot:overviewtab)
 - [一些 Windows Terminal 的 hotkey ](https://defkey.com/windows-terminal-shortcuts)
 
-## 使用 oh-my-posh 的目的
+## 使用 Windows Terminal / PowerShell / oh-my-posh 的原因
 
-- 在 Windows 10 的環境下使用 Git ，我用 PowerShell ，一些指令與 Unix-like 的 Terminal 比較接近。
-- 但是 PowerShell 的內建顏色在顯示 git status 的時候有點難閱讀，所以想找找看有沒有調整的作法，找到了類似 [oh-my-zsh](https://ohmyz.sh/) 的模組 [oh-my-posh](https://github.com/JanDeDobbeleer/oh-my-posh) 。
+- 在 Windows 10 的環境下使用 Git ，我用 PowerShell ，一些指令與 Unix-like 的 Terminal 比較接近
+- 改善 PowerShell 的內建顏色在使用 git status 等指令顯示的資訊有點難閱讀
+- 找到了類似 [oh-my-zsh](https://ohmyz.sh/) 的模組 [oh-my-posh](https://github.com/JanDeDobbeleer/oh-my-posh) 來用
 
 ![oh-my-posh 使用中的 Windows Terminal](images/using-oh-my-posh.jpg)
 
+比較 PowerShell 與 Windows Terminal 用 oh-my-posh 的效果：
 
-
-
-
+![比較 PowerShell 與 Windows Terminal 用 oh-my-posh 的效果](images/using-oh-my-posh_PowerShell.jpg)
