@@ -11,7 +11,7 @@ template.innerHTML = `
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="https://github.com/jchans/jchans.github.io">repo<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="https://github.com/jchans">repo<span class="sr-only">(current)</span></a>
                 </li>
                 
 
