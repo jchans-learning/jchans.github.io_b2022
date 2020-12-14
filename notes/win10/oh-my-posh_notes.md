@@ -25,3 +25,5 @@
 比較 Windows Terminal（下圖上） 與 PowerShell （下圖下）用 oh-my-posh 的效果：
 
 ![比較 PowerShell 與 Windows Terminal 用 oh-my-posh 的效果](images/using-oh-my-posh_PowerShell.jpg)
+
+如果可以的話，當然還是會想用 Unix-like 的系統來做這些事情。但是如果用的是 Windows 的時候，至少可以設定一些比較接近 Unix-like 的終端機使用習慣的東西來用。
