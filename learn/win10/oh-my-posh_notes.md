@@ -9,7 +9,9 @@
 
 - [Windows PowerShell 設定檔 settings.json 設定字體為 Cascadia Code PL](https://docs.microsoft.com/zh-tw/windows/terminal/tutorials/powerline-setup)
 
-- [[Cascadia Code 2009.22 字體下載](https://github.com/microsoft/cascadia-code/releases/tag/v2009.22)]
+- [Cascadia Code 2009.22 字體下載](https://github.com/microsoft/cascadia-code/releases/tag/v2009.22)
+
+- [隱藏 Terminal 中的 user name](https://github.com/JanDeDobbeleer/oh-my-posh/issues/163)
 
 - [oh-my-posh V2 repo](https://github.com/JanDeDobbeleer/oh-my-posh)
 
