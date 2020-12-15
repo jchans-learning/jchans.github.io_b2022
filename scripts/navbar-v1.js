@@ -1,6 +1,6 @@
 const template = document.createElement('template');
 template.innerHTML = `
-<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light navbar-custom">
         </div>
         <a class="navbar-brand" href="/">老翰的儲藏室</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"

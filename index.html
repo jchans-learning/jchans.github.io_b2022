@@ -14,30 +14,58 @@
       padding-top: 65px;
       padding-left: 25px;
       padding-right: 25px;
+      background-color: #939597;
+      color: #FFFFee;
+    }
+
+    .navbar-custom {
+      background-color: #F5DF4D;
+    }
+
+    .dailypost {
+      background-color:
     }
   </style>
 </head>
 
 <body>
-  <div>
-    <!-- 產生 navbar 的 script -->
+  <!-- 產生 navbar 的 script -->
+  <!-- <div>
     <script src="/scripts/navbar-v1.js" type="text/javascript" defer></script>
-  </div>
+  </div> -->
+
+
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light navbar-custom">
+    <div class="container">
+      <a class="navbar-brand" href="/">老翰的儲藏室</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="https://github.com/jchans">Repo</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="https://github.com/jchans/jchans.github.io/tree/master/notes">Notes</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
 
   <div id="container">
-    <ul>
-      <li>平穩而紮實地累積。</li>
-    </ul>
-  </div>
-
-  <!-- 
-    <div>
-         <h2>Legacy Items</h2>
-         <ul>
-             <li> <a href="archive/laohan_notes.html">老翰舊雜記</a></li>
-         </ul>
+    <div class="row d-flex justify-content-center">
+      <div class="col-lg-6">
+        <ul>
+          <li>平穩而紮實地累積。</li>
+        </ul>
+      </div>
     </div>
- -->
+  </div>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
