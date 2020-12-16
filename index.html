@@ -15,7 +15,6 @@
       padding-left: 25px;
       padding-right: 25px;
       background-color: #939597;
-      color: #FFFFee;
     }
 
     .navbar-custom {
@@ -23,7 +22,8 @@
     }
 
     .dailypost {
-      background-color:
+      padding: 20px;
+      background-color: #F5DF4D;
     }
   </style>
 </head>
@@ -59,23 +59,45 @@
 
   <div id="container">
     <div class="row d-flex justify-content-center">
-      <div class="col-lg-6">
-        <ul>
-          <li>平穩而紮實地累積。</li>
-        </ul>
+      <div class="col-lg-6 dailypost">
+        平穩而紮實地累積。
       </div>
+      <!-- 
+      <div class="col-lg-6 dailypost autobg">
+        測試1
+      </div>
+      -->
     </div>
-  </div>
 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
-    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
-    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
-    crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+      integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+      integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+      crossorigin="anonymous"></script>
+
+    <script>
+      function getRandomInt(max) {
+        return Math.floor(Math.random() * Math.floor(max - 50) + 100);
+      }
+
+      function getRBGA() {
+        return `linear-gradient(135deg, rgba(${getRandomInt(256)},${getRandomInt(256)},${getRandomInt(256)},.5), rgba(${getRandomInt(256)},${getRandomInt(256)},${getRandomInt(256)},.8)`
+      }
+
+      const elements = document.querySelectorAll('.autobg');
+
+      Array.from(elements).forEach((element, index) => {
+        element.style.backgroundImage = getRBGA();
+      });
+
+      // $('.autobg').each(function (index, currentElement) {
+      //     currentElement.style.backgroundImage = getRBGA();
+      // });
+    </script>
 </body>
 
 </html>
