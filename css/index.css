@@ -18,7 +18,7 @@ body {
   pre>code {
     display: block;
     padding: 1rem;
-    word-wrap: break-word;
+    word-wrap: normal;
   }
 
   .navbar-custom {
