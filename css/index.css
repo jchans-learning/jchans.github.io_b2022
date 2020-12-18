@@ -1,0 +1,32 @@
+body {
+    padding-top: 65px;
+    padding-left: 25px;
+    padding-right: 25px;
+    background-color: #939597;
+  }
+
+  pre,
+  code {
+    font-family: monospace, monospace;
+  }
+
+  pre {
+    overflow: auto;
+    background-color: #eff;
+  }
+
+  pre>code {
+    display: block;
+    padding: 1rem;
+    word-wrap: break-word;
+  }
+
+  .navbar-custom {
+    background-color: #F5DF4D;
+  }
+
+  .dailypost {
+    margin: 5px;
+    padding: 20px;
+    background-color: #F5DF4D;
+  }

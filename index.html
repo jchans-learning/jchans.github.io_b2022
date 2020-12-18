@@ -9,28 +9,8 @@
   <!-- <link rel="stylesheet" href="css/mystyle.css"> -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
     integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/index.css">
   <style>
-    body {
-      padding-top: 65px;
-      padding-left: 25px;
-      padding-right: 25px;
-      background-color: #939597;
-    }
-
-    .postcode {
-      padding: 10px;
-      background-color: #998888;
-    }
-
-    .navbar-custom {
-      background-color: #F5DF4D;
-    }
-
-    .dailypost {
-      margin: 5px;
-      padding: 20px;
-      background-color: #F5DF4D;
-    }
   </style>
 </head>
 
@@ -72,15 +52,16 @@
       <div class="col-lg-6 dailypost">
         <h3>2020/12/18 Fri</h3>
         <p>早上本來有點猶豫要不要少帶一點帶團的器材，結果還是帶了行李箱。</p>
-        <div class="postcode">
-<pre>
-php 的 Interactive Shell
-在 VSCode 裡叫出 terminal （快速鍵是 ctrl + ` ）
-
-指令是 php -a
-</pre>
-        </div>
+        <figure>
+          <figcaption>在 VSCode 裡叫出 terminal 的快速鍵</figcaption>
+          <pre><code>ctrl + `</code></pre>
+        </figure>
+        <figure>
+          <figcaption>在 Terminal 叫出 php Interactive Shell 的指令</figcaption>
+          <pre><code>php -a</code></pre>
+        </figure>
       </div>
+
 
       <div class="col-lg-6 dailypost">
         <h3>2020/12/17 Thur</h3>
@@ -88,11 +69,7 @@ php 的 Interactive Shell
         <p>應該是有蠻多需要調整的東西就是了。</p>
         <p>想法：自動把 markdown 檔案轉成 html 的 script ？一定有人做過了，找時間查查看。</p>
       </div>
-      <!-- 
-      <div class="col-lg-6 dailypost autobg">
-        測試1
-      </div>
-      -->
+
     </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
