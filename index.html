@@ -7,8 +7,8 @@
   <title>老翰的儲藏室</title>
   <!-- <link rel="stylesheet" href="css/reset.css"> -->
   <!-- <link rel="stylesheet" href="css/mystyle.css"> -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
-    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous" />
+  <link rel="stylesheet" href="bootstrap-4.5.3-dist/css/bootstrap.css">
+  <link rel="stylesheet" href="fontawesome-free-5.15.1-web/css/all.css">
   <link rel="stylesheet" href="css/index.css">
   <style>
   </style>
@@ -43,7 +43,7 @@
   </nav>
 
 
-  <div id="container">
+  <div class="container">
     <div class="row d-flex justify-content-center">
       <div class="col-lg-6 dailypost">
         <p>平穩而紮實地累積。</p>
@@ -82,38 +82,44 @@ code 內容
         <p>應該是有蠻多需要調整的東西就是了。</p>
         <p>想法：自動把 markdown 檔案轉成 html 的 script ？一定有人做過了，找時間查查看。</p>
       </div>
-
     </div>
+    <div class="row">
+      <div class="col-lg-6">
+        <h3>測試</h3>
+        <p>測試背景</p>
+      </div>
+    </div>
+  </div>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
-      integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
-      crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
-      integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
-      crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    crossorigin="anonymous"></script>
 
-    <script>
-      function getRandomInt(max) {
-        return Math.floor(Math.random() * Math.floor(max - 50) + 100);
-      }
+  <script>
+    function getRandomInt(max) {
+      return Math.floor(Math.random() * Math.floor(max - 50) + 100);
+    }
 
-      function getRBGA() {
-        return `linear-gradient(135deg, rgba(${getRandomInt(256)},${getRandomInt(256)},${getRandomInt(256)},.5), rgba(${getRandomInt(256)},${getRandomInt(256)},${getRandomInt(256)},.8)`
-      }
+    function getRBGA() {
+      return `linear-gradient(135deg, rgba(${getRandomInt(256)},${getRandomInt(256)},${getRandomInt(256)},.5), rgba(${getRandomInt(256)},${getRandomInt(256)},${getRandomInt(256)},.8)`
+    }
 
-      const elements = document.querySelectorAll('.autobg');
+    const elements = document.querySelectorAll('.autobg');
 
-      Array.from(elements).forEach((element, index) => {
-        element.style.backgroundImage = getRBGA();
-      });
+    Array.from(elements).forEach((element, index) => {
+      element.style.backgroundImage = getRBGA();
+    });
 
       // $('.autobg').each(function (index, currentElement) {
       //     currentElement.style.backgroundImage = getRBGA();
       // });
-    </script>
+  </script>
 </body>
 
 </html>

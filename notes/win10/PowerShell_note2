@@ -1,0 +1,22 @@
+Ctrl+Tab to switch to the tab on the right 
+Ctrl+Shift+Tab to switch to the tab on the left. 
+Ctrl+Shift+W will close the current tab.
+
+
+cd
+ls
+mkdir
+rm
+man
+pwd
+mv
+cp / copy
+
+> echo $null >> filename
+
+script
+Set-ExecutionPolicy RemoteSigned
+
+import module
+$Profile
+Set-ExecutionPolicy Unrestricted
