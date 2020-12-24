@@ -12,13 +12,16 @@ template.innerHTML = `
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
+                    <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item active">
                         <a class="nav-link" href="cheatsheet.html">CheatSheet</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="https://github.com/jchans">Repo</a>
+                        <a class="nav-link" href="old-entries.html">OldEntries</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="old-entries.html">OldEntries</a>
+                        <a class="nav-link" href="https://github.com/jchans">Repo</a>
                     </li>
                 </ul>
             </div>
