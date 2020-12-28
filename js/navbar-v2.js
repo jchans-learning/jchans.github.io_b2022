@@ -21,6 +21,9 @@ template.innerHTML = `
                         <a class="nav-link" href="old-entries.html">OldEntries</a>
                     </li>
                     <li class="nav-item active">
+                        <a class="nav-link" href="old-entries.html">Hobbies</a>
+                    </li>
+                    <li class="nav-item active">
                         <a class="nav-link" href="https://github.com/jchans">Repo</a>
                     </li>
                 </ul>
