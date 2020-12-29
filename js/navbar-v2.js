@@ -18,7 +18,7 @@ template.innerHTML = `
                         <a class="nav-link" href="cheatsheet.html">CheatSheets</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="old-entries.html">記事存檔</a>
+                        <a class="nav-link" href="old-entries.html">記事</a>
                     </li>
                     <li class="nav-item active">
                         <a class="nav-link" href="hobbies.html">嗜好</a>
