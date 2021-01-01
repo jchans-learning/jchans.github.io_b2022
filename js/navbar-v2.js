@@ -15,13 +15,13 @@ template.innerHTML = `
                     <a class="nav-link" href="/">首頁</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="old-entries.html">記事</a>
+                        <a class="nav-link" href="/old-entries.html">記事</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="hobbies.html">嗜好</a>
+                        <a class="nav-link" href="/hobbies.html">嗜好</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="cheatsheet.html">CheatSheets</a>
+                        <a class="nav-link" href="/cheatsheet.html">CheatSheets</a>
                     </li>
                     <li class="nav-item active">
                         <a class="nav-link" href="https://github.com/jchans">Repo</a>
