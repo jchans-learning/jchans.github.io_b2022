@@ -20,3 +20,8 @@ Set-ExecutionPolicy RemoteSigned
 import module
 $Profile
 Set-ExecutionPolicy Unrestricted
+
+
+profile 檔 comment多行
+<#
+#>
