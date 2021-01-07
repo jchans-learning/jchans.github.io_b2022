@@ -29,6 +29,9 @@ template.innerHTML = `
           </ul>
           <ul class="navbar-nav">
             <li class="nav-item active">
+              <a class="nav-link" href="/old-entries.html">舊記事</a>
+            </li>
+            <li class="nav-item active">
               <a class="nav-link" href="/cheatsheet.html">CheatSheets</a>
             </li>
           </ul>
