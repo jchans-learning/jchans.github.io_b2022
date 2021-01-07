@@ -3,6 +3,7 @@ template.innerHTML = `
 
 <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
       <div class="container">
+        <a class="navbar-brand" href="/">老翰的儲藏室</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -15,7 +16,6 @@ template.innerHTML = `
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <a class="navbar-brand" href="/">老翰的儲藏室</a>
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
               <a class="nav-link" href="/">首頁</a>
