@@ -26,6 +26,8 @@ template.innerHTML = `
             <li class="nav-item active">
               <a class="nav-link" href="https://github.com/jchans">Repo</a>
             </li>
+          </ul>
+          <ul class="navbar-nav">
             <li class="nav-item active">
               <a class="nav-link" href="/cheatsheet.html">CheatSheets</a>
             </li>
