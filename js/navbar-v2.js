@@ -18,22 +18,17 @@ template.innerHTML = `
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="/">首頁</a>
+              <a class="nav-link" href="/cheatsheet.html">CheatSheets</a>
             </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="/about.html">關於老翰</a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="https://github.com/jchans">Repo</a>
-            </li>
-          </ul>
-          <ul class="navbar-nav">
             <li class="nav-item active">
               <a class="nav-link" href="/old-entries.html">舊記事</a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="/cheatsheet.html">CheatSheets</a>
+              <a class="nav-link" href="/about.html">關於老翰</a>
             </li>
+            
+          </ul>
+          <ul class="navbar-nav">
           </ul>
         </div>
       </div>
