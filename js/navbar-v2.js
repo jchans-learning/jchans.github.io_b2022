@@ -29,6 +29,11 @@ template.innerHTML = `
             
           </ul>
           <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="https://github.com/jchans">
+                <i class="fab fa-github-square fa-2x"></i>
+              </a>
+            </li>
           </ul>
         </div>
       </div>
