@@ -3,7 +3,7 @@ template.innerHTML = `
 
 <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
       <div class="container">
-        <a class="navbar-brand" href="/">老翰的儲藏室</a>
+        老翰的儲藏室
         <button
           class="navbar-toggler"
           type="button"
