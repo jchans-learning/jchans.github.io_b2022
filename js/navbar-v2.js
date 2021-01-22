@@ -24,17 +24,17 @@ template.innerHTML = `
               <a class="nav-link" href="/cheatsheet.html">小抄</a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="/old-entries.html">舊記事</a>
+              <a class="nav-link" href="/old-entries.html">庫存</a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="/about.html">關於老翰</a>
+              <a class="nav-link" href="/about.html">關於</a>
             </li>
             
           </ul>
           <ul class="navbar-nav">
             <li class="nav-item active">
               <a class="nav-link" href="https://github.com/jchans">
-                <i class="fab fa-github-square fa-2x"></i>
+                Repo
               </a>
             </li>
           </ul>
