@@ -21,7 +21,7 @@ template.innerHTML = `
               <a class="nav-link" href="/">首頁</a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="/cheatsheet.html">CheatSheets</a>
+              <a class="nav-link" href="/cheatsheet.html">小抄</a>
             </li>
             <li class="nav-item active">
               <a class="nav-link" href="/old-entries.html">舊記事</a>
