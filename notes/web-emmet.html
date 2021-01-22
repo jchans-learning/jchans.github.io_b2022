@@ -1,38 +1,39 @@
 <!DOCTYPE html>
 <html lang="zh-tw">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Emmet Notes</title>
-    <link rel="stylesheet" href="/bootstrap-4.5.3-dist/css/bootstrap.css" />
-    <link rel="stylesheet" href="/fontawesome-free-5.15.1-web/css/all.css" />
-    <link rel="stylesheet" href="/css/hans-basic-2021.css" />
-    <style></style>
-  </head>
 
-  <body>
-    <!-- 產生 navbar 的 script -->
-    <div>
-      <script src="/js/navbar-v2.js" type="text/javascript" defer></script>
-    </div>
-    <!-- 產生 navbar 的 script end-->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Emmet Notes</title>
+  <link rel="stylesheet" href="/bootstrap-4.5.3-dist/css/bootstrap.css" />
+  <link rel="stylesheet" href="/fontawesome-free-5.15.1-web/css/all.css" />
+  <link rel="stylesheet" href="/css/hans-basic-2021.css" />
+  <style></style>
+</head>
 
-    <div class="container">
-      <!-- Container Content Start -->
-      <div class="row d-flex justify-content-center">
-        <!-- Row Content Start -->
+<body>
+  <!-- 產生 navbar 的 script -->
+  <div class="mb-1">
+    <script src="/js/navbar-v2.js" type="text/javascript" defer></script>
+  </div>
+  <!-- 產生 navbar 的 script end-->
 
-        <!-- Code card start -->
-        <div class="col-lg-8 card dailypost">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Custom Attributes</h5>
-              <!--                           
+  <div class="container">
+    <!-- Container Content Start -->
+    <div class="row d-flex justify-content-center">
+      <!-- Row Content Start -->
+
+      <!-- Code card start -->
+      <div class="col-lg-8 card dailypost">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Custom Attributes</h5>
+            <!--                           
             <ul>
               <li></li>
             </ul>
              -->
-              <h6>以新增多個只改數字的圖片檔名為例</h3>
+            <h6>以新增多個只改數字的圖片檔名為例</h3>
               <figure>
                 <figcaption>主要是用 [ ] 來產生自訂的 attribute， $ 字符號的部分可以依序遞增</figcaption>
                 <pre><code>
@@ -51,41 +52,44 @@ img[src="/folder/image$.jpg"]*5
               <ul>
                 <li><a href="https://docs.emmet.io/abbreviations/syntax/">Abbreviations Syntax</a></li>
               </ul>
-            </div>
           </div>
         </div>
-        <!-- Code card end -->
+      </div>
+      <!-- Code card end -->
 
-        <!-- Code card start -->
-        <div class="col-lg-8 card dailypost">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">在 VSCode 裡啟用 Emmet 對 JSX 的支援</h5>
-              <figure>
-                <figcaption>編輯 Emmet 的 settings.json 檔案，加入以下設定：</figcaption>
-                <pre><code>
+      <!-- Code card start -->
+      <div class="col-lg-8 card dailypost">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">在 VSCode 裡啟用 Emmet 對 JSX 的支援</h5>
+            <figure>
+              <figcaption>編輯 Emmet 的 settings.json 檔案，加入以下設定：</figcaption>
+              <pre><code>
 {
   "emmet.includeLanguages": {
   "javascript": "javascriptreact"
   }
 }
                 </code></pre>
-              </figure>
-              <p>參考資料：</p>
-              <ul>
-                <li><a href="https://medium.com/@eshwaren/enable-emmet-support-for-jsx-in-visual-studio-code-react-f1f5dfe8809c">Enable Emmet support for JSX in Visual Studio Code | React</a></li>
-              </ul>
-            </div>
+            </figure>
+            <p>參考資料：</p>
+            <ul>
+              <li><a
+                  href="https://medium.com/@eshwaren/enable-emmet-support-for-jsx-in-visual-studio-code-react-f1f5dfe8809c">Enable
+                  Emmet support for JSX in Visual Studio Code | React</a></li>
+            </ul>
           </div>
         </div>
-        <!-- Code card end -->
-
-        <!-- Container Content End -->
       </div>
+      <!-- Code card end -->
+
       <!-- Container Content End -->
     </div>
+    <!-- Container Content End -->
+  </div>
 
-    <script src="/js/jquery-3.5.1.js"></script>
-    <script src="/bootstrap-4.5.3-dist/js/bootstrap.bundle.js"></script>
-  </body>
+  <script src="/js/jquery-3.5.1.js"></script>
+  <script src="/bootstrap-4.5.3-dist/js/bootstrap.bundle.js"></script>
+</body>
+
 </html>
