@@ -24,7 +24,12 @@ template.innerHTML = `
               <a class="nav-link" href="/cheatsheet.html">小抄</a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="/old-entries.html">庫存</a>
+              <a class="nav-link" href="/old-entries.html">記事</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="https://github.com/jchans">
+                Repo
+              </a>
             </li>
             <li class="nav-item active">
               <a class="nav-link" href="/about.html">關於</a>
@@ -33,8 +38,8 @@ template.innerHTML = `
           </ul>
           <ul class="navbar-nav">
             <li class="nav-item active">
-              <a class="nav-link" href="https://github.com/jchans">
-                Repo
+              <a class="nav-link" href="https://www.facebook.com/hanschiang86/">
+              <i class="fab fa-facebook-square"></i>
               </a>
             </li>
           </ul>
