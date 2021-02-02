@@ -21,25 +21,31 @@ template.innerHTML = `
               <a class="nav-link" href="/">首頁</a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="/cheatsheet.html">小抄</a>
+              <a class="nav-link" href="/old-entries.html">舊記事</a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="/old-entries.html">記事</a>
+              <a class="nav-link" href="https://github.com/jchans"> Repo </a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="https://github.com/jchans">
-                Repo
-              </a>
+              <a class="nav-link" href="/cheatsheet.html">CheatSheet</a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="/about.html">關於</a>
+              <a class="nav-link" href="/about.html">關於老翰</a>
             </li>
-            
           </ul>
           <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="https://www.facebook.com/hanschiang86/">
-              <i class="fab fa-facebook-square"></i>
+            <li class="nav-item d-flex active">
+              <a
+                class="nav-link fa-lg mx-2"
+                href="https://www.linkedin.com/in/hans-chiang-8b890913b/"
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a
+                class="nav-link fa-lg mx-2"
+                href="https://www.facebook.com/hanschiang86/"
+              >
+                <i class="fab fa-facebook-square"></i>
               </a>
             </li>
           </ul>
