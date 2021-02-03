@@ -22,27 +22,59 @@
       <div class="row d-flex justify-content-center">
         <!-- Row Content Start -->
 
-        <!-- Portrait Card Start -->
+        <!-- Collapse card start -->
         <div class="col-lg-8 card dailypost">
           <div class="card">
             <div class="card-body">
-              <div class="row pb-1 flex align-items-center">
-                <div class="col-sm-3 pb-2 d-flex">
-                  <img
-                    class="mx-auto"
-                    src="/images/hans_pixel_weng.png"
-                    alt="pixel hans"
-                    style="height: 150px"
-                  />
-                </div>
-                <div class="col-sm">
-                  放一些雜記筆記。記錄日常學習筆記或心得，不限於技術。
-                </div>
+              <h5 class="card-title">2021/02/03 Wed</h5>
+              <p>
+                自己的 side project ，「 whishist 」，許願者app 。一個許願清單，
+                wishlist 去掉 L 。
+              </p>
+
+              <!-- 
+              <ul>
+                <li></li>
+              </ul>
+              -->
+
+              <!-- 
+              <figure>
+                <figcaption>小標題</figcaption>
+                <pre><code>指令</code></pre>
+              </figure>
+              -->
+
+              <!-- 
+              <div class="collapse" id="hans-info-more">
+                <h6>小標1</h6>
+                <p>
+                  
+                </p>
+                <h6>小標2</h6>
+                <p>
+                  
+                </p>
+                <h6>小標3</h6>
+                <p>
+                  
+                </p>
               </div>
+              <button
+                class="btn btn-secondary"
+                type="button"
+                data-toggle="collapse"
+                data-target="#hans-info-more"
+                aria-expanded="false"
+                aria-controls="hans-info-more"
+              >
+                （展開/收合）
+              </button>
+              -->
             </div>
           </div>
         </div>
-        <!-- Portrait Card End -->
+        <!-- Collapse card end -->
 
         <!-- Collapse card start -->
         <div class="col-lg-8 card dailypost">
@@ -109,9 +141,18 @@
                       即使是這樣亂七八糟地寫筆記，我覺得這樣好像我有振作起來。
                     </li>
                     <li>pure function, reactjs.org 上的資料</li>
-                    <li>immutable, https://immutable-js.github.io/immutable-js/</li>
-                    <li>functional programming (fb), https://en.wikipedia.org/wiki/Functional_programming</li>
-                    <li>目前比較流行物件導向的程式語言。 JS 介於 fp 與此之間。 React 與 Redux 屬於 fb 領域，擅長用函式來解決問題，尤其是 Redux 。</li>
+                    <li>
+                      immutable, https://immutable-js.github.io/immutable-js/
+                    </li>
+                    <li>
+                      functional programming (fb),
+                      https://en.wikipedia.org/wiki/Functional_programming
+                    </li>
+                    <li>
+                      目前比較流行物件導向的程式語言。 JS 介於 fp 與此之間。
+                      React 與 Redux 屬於 fb 領域，擅長用函式來解決問題，尤其是
+                      Redux 。
+                    </li>
                     <li>React 提供相當於 MVC 中的 V 。</li>
                     <li>Redux ，拉丁語的流。處理 MVC 中的 C 。</li>
                     <li>MVC架構， https://zh.wikipedia.org/wiki/MVC</li>
