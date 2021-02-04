@@ -28,6 +28,52 @@
         </div>
         <!-- Title card end -->
 
+        <!-- Code card start -->
+        <div class="col-lg-8 card dailypost">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">
+                [React] .gitignore 設定 忽略個人紀錄或設定
+              </h5>
+              <p>
+                我們在 React
+                專案資料夾裡會出現一些個人的環境設定或者使用紀錄檔，例如 .vscode
+                與 .eslintcache ，這些檔案如果在 Github Repo 創立的時候沒有設定
+                ignore ，可能會在大家上傳與下載的時候不斷地產生衝突需要 merge
+                （因為大家的視窗顏色現在可能因為 VSCode 的 Window Colors
+                這個套件而各自有不同的設定。 .eslintcache
+                則是每次使用都會自動產生不同的檔案。）
+              </p>
+              <p>
+                <img
+                  src="./images/react-to-ignore.png"
+                  alt=""
+                  class="img-fluid"
+                />
+              </p>
+              <h6>處理方式如下：</h4>
+              
+              <ol>
+                <li>備份自己的 .vscode 設定檔</li>
+                <li>
+                  <figure>
+                    <figcaption>在 .gitignore 檔案中新增</figcaption>
+                    <pre><code>
+# 忽略個人使用設定
+.vscode
+.eslintcache
+                    </code></pre>
+                  </figure>
+                </li>
+                <li class="text-danger">刪除 .eslintcache 檔，刪除 .vscode 資料夾</li>
+                <li>完成以上設定後把專案 push 到 Github</li>
+                <li>把先前備份好的 .vscode 設定檔放回專案目錄中，現在應該已經不會被 git 紀錄</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+        <!-- Code card end -->
+
         <!-- Container Content End -->
       </div>
       <!-- Container Content End -->
