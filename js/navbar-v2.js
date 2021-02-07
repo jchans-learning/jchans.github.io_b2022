@@ -24,9 +24,6 @@ template.innerHTML = `
               <a class="nav-link" href="/old-entries.html">舊記事</a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="https://github.com/jchans"> Repo </a>
-            </li>
-            <li class="nav-item active">
               <a class="nav-link" href="/cheatsheet.html">CheatSheet</a>
             </li>
             <li class="nav-item active">
@@ -34,6 +31,11 @@ template.innerHTML = `
             </li>
           </ul>
           <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="https://github.com/jchans"
+                ><i class="fab fa-github-square"></i
+              ></a>
+            </li>
             <li class="nav-item d-flex active">
               <a
                 class="nav-link fa-lg mx-2"
