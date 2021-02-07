@@ -31,8 +31,8 @@ template.innerHTML = `
             </li>
           </ul>
           <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="https://github.com/jchans"
+            <li class="nav-item d-flex active">
+              <a class="nav-link fa-lg mx-2" href="https://github.com/jchans"
                 ><i class="fab fa-github-square"></i
               ></a>
             </li>
