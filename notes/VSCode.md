@@ -1,5 +1,7 @@
 # VSCode 筆記
 
+Last Update: 2021.02.13.
+
 ### Start / Close Terminal
 
 | Mac      | Windows  |
@@ -7,6 +9,7 @@
 | ctrl + ` | ctrl + ` |
 
 一些 VSCode 用過的第三方工具，想整理一下：
+
 <ul>
 <li>Babel JavaScript</li>
 <li>Debugger for Chrome</li>

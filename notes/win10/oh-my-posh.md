@@ -6,6 +6,7 @@
 
   - 照這個網頁的教學做完，可能會遇到 oh-my-posh 無法載入的問題
   - 需要調整 Windows Terminal / PowerShell 的設定，調整 [Set-ExecutionPolicy](https://ss64.com/ps/set-executionpolicy.html) 為 Unrestricted 即可正常 Import Module
+
 - [Windows PowerShell 設定檔 settings.json 設定字體為 Cascadia Code PL](https://docs.microsoft.com/zh-tw/windows/terminal/tutorials/powerline-setup)
 - [Cascadia Code 2009.22 字體下載](https://github.com/microsoft/cascadia-code/releases/tag/v2009.22)
 - [隱藏 Terminal 中的 user name](https://github.com/JanDeDobbeleer/oh-my-posh/issues/163)
@@ -27,3 +28,5 @@
 ![比較 PowerShell 與 Windows Terminal 用 oh-my-posh 的效果](images/using-oh-my-posh_PowerShell.jpg)
 
 如果可以的話，當然還是會想用 Unix-like 的系統來做這些事情。但是如果用的是 Windows 的時候，至少可以設定一些比較接近 Unix-like 的終端機使用習慣的東西來用。
+
+Last Update: 2021.02.13.
