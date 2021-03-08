@@ -1,4 +1,4 @@
-const template = document.createElement('template');
+const template = document.createElement("template");
 template.innerHTML = `
 
 <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
@@ -21,13 +21,16 @@ template.innerHTML = `
               <a class="nav-link" href="/">首頁</a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="/old-entries.html">舊記事</a>
+              <a class="nav-link" href="/pages/old-entries.html">舊記事</a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="/cheatsheet.html">CheatSheet</a>
+              <a class="nav-link" href="/pages/hobbies.html">嗜好</a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="/about.html">關於老翰</a>
+              <a class="nav-link" href="/pages/cheatsheet.html">CheatSheet</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="/pages/about.html">關於老翰</a>
             </li>
           </ul>
           <ul class="navbar-nav">
@@ -58,6 +61,6 @@ template.innerHTML = `
       </div>
     </nav>
 
-`
+`;
 
 document.body.appendChild(template.content);
