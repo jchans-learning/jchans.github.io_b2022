@@ -13,3 +13,6 @@ React 中有兩種元件
 - 函式型元件 (Function components)
 - 類別型元件 (Class components)
 
+類別型元件的一些容易讓人搞混的東西
+- 生命週期方法例如 componentDidUpdate
+- 狀態處理方法例如 this.setState
