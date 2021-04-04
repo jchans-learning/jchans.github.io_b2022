@@ -4,6 +4,15 @@
 
 模組 The Workshop Watches 出自 MCDM 出版的 [Arcadia #1](https://shop.mcdmproductions.com/products/arcadia-issue1) 翻譯其中一些資料（主要是 handout 與一些角色名稱）作為中文帶團使用。有興趣的 DM 可以參考。但請勿用於其他商業用途。
 
+## NPC 中文名稱翻譯
+
+- 伊路瑪．明亮者 Illumar the Bright
+- 阿瑪利．巴克西 Amari Bacci
+- S.A.M. 「輔助魔法結構體」的縮寫（中文可能要唸作「山姆」），全文是 Structure of Assistive Magic 。
+- 伊路瑪的同事們
+  - 伊特拉 Itera
+  - 伊克索 Exor
+
 ## 翻譯習慣
 
 1. NPC 名字翻成中文，在前後會加上半形空白以表示為名字。
@@ -29,6 +38,8 @@ S.A.M. 已經學會預測我們施法以外的需求。它在一般的時間提�
 1. 來源檔案：Arcadia202101_IllumarNote2
 
 ### 伊路瑪的筆記 3
+
+今晚我們失去了 伊克索 。溫室的溫度只比預期的稍微高出一根頭髮的刻度，造成了工坊一次相當激烈的反應。必須重看氣候控制的功能。
 
 #### 備註
 
