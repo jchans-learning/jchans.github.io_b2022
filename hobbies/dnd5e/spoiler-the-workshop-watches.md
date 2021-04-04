@@ -27,7 +27,7 @@
 #### 備註
 
 1. 來源檔案：Arcadia202101_IllumarNote1
-2. 修復術 Mending
+2. 修復術 Mending ，需要的材料是 2 顆磁鐵石
 
 ### 伊路瑪的筆記 2
 
