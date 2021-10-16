@@ -1,4 +1,4 @@
-# 這是 Hans 的 Github Page 的 Repo
+# Hans 的 Github Page
 
 [Hans 的 Github Page](https://jchans.github.io/)
 
