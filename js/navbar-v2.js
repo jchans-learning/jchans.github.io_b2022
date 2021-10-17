@@ -20,15 +20,6 @@ template.innerHTML = `
             <li class="nav-item active">
               <a class="nav-link" href="/">首頁</a>
             </li>
-            <!-- <li class="nav-item active">
-              <a class="nav-link" href="/pages/old-entries.html">舊記事</a>
-            </li> -->
-            <!-- <li class="nav-item active">
-              <a class="nav-link" href="/pages/hobbies.html">嗜好</a>
-            </li> -->
-            <!-- <li class="nav-item active">
-              <a class="nav-link" href="/pages/cheatsheet.html">CheatSheet</a>
-            </li> -->
             <li class="nav-item active">
               <a class="nav-link" href="/pages/about.html">關於 Hans</a>
             </li>
