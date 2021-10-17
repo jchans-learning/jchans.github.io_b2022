@@ -1,1 +1,3 @@
+# ignore VSCode and Mac settings
 .vscode
+.DS_Store
